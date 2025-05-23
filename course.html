@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="heading">Course Registration Form</h1>
+    <form action="" autocomplete="" target="_blank">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label>First Name:</label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="Ex:Maha"
+                size="10"
+                maxlength="10"
+                required
+              />
+              <p>Enter your name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Surname:</label></td>
+            <td><input type="text" placeholder="Ex:G" size="15" optional /></td>
+          </tr>
+          <tr>
+            <td><label>Mobile Number:</label></td>
+            <td><input type="tel" size="10" maxlength="10" required /></td>
+          </tr>
+          <tr>
+            <td><label>Email:</label></td>
+            <td>
+              <input
+                type="email"
+                placeholder="Ex:maha12@gmail.com"
+                size="15"
+                required
+              />
+              <img id="valid" src="ok.jpg" alt="" />
+              <img id="invalid" src="no.png" alt="" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Password:</label></td>
+            <td>
+              <input
+                type="password"
+                placeholder="min 5 characters"
+                size="10"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Confirm Password</label></td>
+            <td>
+              <input
+                type="password"
+                placeholder="min 5 characters"
+                size="10"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>DOB:</label></td>
+            <td><input type="date" required /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" /><label for="">Male</label>
+              <input type="radio" /><label for="">Female</label>
+              <input type="radio" /><label for="">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select Country</label></td>
+            <td>
+              <select>
+                <option value="">INDIA</option>
+                <option value="">US</option>
+                <option value="">AUSTRALIA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Upload Picture:</label></td>
+            <td><input type="file" readonly /></td>
+          </tr>
+          <tr>
+            <td><input type="reset" readonly /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label>Select Course:</label></td>
+            <td>
+              <select>
+                <option value="">Python Full Stack</option>
+                <option value="">Java Full Stack</option>
+                <option value="">Full Stack Web</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Delivery mode:</label></td>
+            <td>
+              <input type="radio" /><label>ONLINE</label>
+              <input type="radio" /><label>OFFLINE</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Comments:</label></td>
+            <td><textarea rows="4" cols="90"></textarea></td>
+          </tr>
+          <tr>
+            <td><label>Institute Name</label></td>
+            <td><input type="text" placeholder="TAP ACADEMY" readonly /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <tr>
+        <td><input type="submit" readonly /></td>
+      </tr>
+    </form>
+  </body>
+</html>
